@@ -10,7 +10,7 @@ class Numbers {
     }
   }
   count() {
-    //return the count of numbers in data
+    return this.data.length;
   }
   printNumbers() {
     //print the numbers in data
