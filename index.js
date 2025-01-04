@@ -43,10 +43,19 @@ class Numbers {
     return this.data.reduce((storeVal, num) => storeVal * num, 1);
   }
   greaterThan(target) {
-    //return the numbers greater than the target
+    let greaters = this.data.filter((num) => num > target);
+    {
+      return greaters;
+    }
   }
   howMany(target) {
-    //return the count of a given number
+    let many = 0;
+    for (let i = 0; i < this.data.length; i++) {
+      if (this.data[i] === target) {
+        many++;
+      }
+    }
+    return many;
   }
 }
 //Prompt the user for a list of integers separated by commas
